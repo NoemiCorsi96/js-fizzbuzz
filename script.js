@@ -12,6 +12,8 @@ Consigli del giorno:
 scriviamo sempre prima dei commenti in italiano per capire cosa vogliamo fare
 proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano" */
 
+
+
 //Per fare questa operazione iterativa devo impostare un ciclo for
 
 //Quali sono i numeri divisibili per 5? Sono i numeri che se divido per 5, il resto è zero. Per farlo devo utilizzare un operatore resto %
@@ -27,7 +29,7 @@ Se non è divisibile per nessuno di questi allora stampa il numero  */
 /* La mia idea: 
 
 for (let i=1; i<=5; i++){
-    console.log(i); 
+     
     if (i%3==0){
     console.log('Fizz')}
     else if (i%5==0){
@@ -38,3 +40,19 @@ for (let i=1; i<=5; i++){
     console.log(i)}
 }
 */
+
+// Devo mettere la condizione più specifica prima, ovvero divisibiele sia per 3 che per 5
+
+//Il mio codice:
+
+for (let i=1; i<=100; i++){
+     
+    if (i%3==0 & i%5==0){
+    console.log('FizzBuzz')}
+    else if (i%3==0){
+    console.log('Fizz')}
+    else if (i%5==0){
+    console.log('Buzz')}
+    else {
+    console.log(i)}
+}
